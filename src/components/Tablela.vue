@@ -53,18 +53,18 @@ function valorAtualizado(value) {
 <style scoped>
 
 * {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: left;
     margin: 0;
 }
 
 table{
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 thead tr {
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(81, 81, 81);
 }
 
 </style>

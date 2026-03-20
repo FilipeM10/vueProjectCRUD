@@ -59,9 +59,10 @@ const cadastrar = async () => {
         flex-direction: column;
     }
     .btnCadastrar {
-        background: linear-gradient(to right, #fff, rgb(189, 189, 189));
+        background: linear-gradient(to right, #d6e3ff, rgb(149, 251, 255));
         height: 30px;
         border-radius: 8px;
+        font-weight: 800;
     }
     input, select {
         border-radius: 10px;
