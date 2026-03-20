@@ -13,7 +13,6 @@ export const getTable = async () => { //concluido
         }
 
         const dataTable = await req.json()
-        console.log('Get Success', dataTable)
         return dataTable
 
     } catch(err){
@@ -32,7 +31,6 @@ export const cadastrarUser = async (data) => {
         })
         
         const res = await req.json();
-        console.log(res)
         return res
     } catch(err) {
         console.error(err)

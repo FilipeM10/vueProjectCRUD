@@ -10,7 +10,6 @@ const prop = defineProps({
 })
 
 function valorAtualizado(value) {
-    console.log(value)
     emit('atualizarDelete', value)
 }
 
