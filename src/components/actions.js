@@ -39,15 +39,16 @@ export const cadastrarUser = async (data) => {
 
 export const deletar = async (val) => {
     try {
-        const req = await fetch(import.meta.env.VITE_API_URL+'/usuarios', {
+        const req = await fetch(import.meta.env.VITE_API_URL+`/usuarios/${val}`, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"
             }
         })
 
-        const res = await req.json()
-        return res
+        await req.json()
+        console.log({message: "concluido", valoriD: val})
+        return {message: "concluido", valoriD: val}
         
     } catch(err) {
         console.error(err)

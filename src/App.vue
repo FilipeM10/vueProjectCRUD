@@ -1,8 +1,8 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue';
 import Formulario from '@/components/Formulario.vue';
 import Tablela from '@/components/Tablela.vue';
-import { getTable } from '@/components/actions'
+import { getTable } from '@/components/actions';
 
 const requisicao = ref([])
 
