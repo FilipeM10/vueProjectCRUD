@@ -1,7 +1,7 @@
 export const getTable = async () => { //concluido
     try {
 
-        const req = await fetch('http://localhost:3000/usuarios', {
+        const req = await fetch(import.meta.env.VITE_API_URL+'/usuarios', {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json"
@@ -22,7 +22,7 @@ export const getTable = async () => { //concluido
 
 export const cadastrarUser = async (data) => {
     try {
-        const req = await fetch('http://localhost:3000/usuarios', {
+        const req = await fetch(import.meta.env.VITE_API_URL+'/usuarios', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -39,7 +39,7 @@ export const cadastrarUser = async (data) => {
 
 export const deletar = async (val) => {
     try {
-        const req = await fetch(`http://localhost:3000/usuarios/${val}`, {
+        const req = await fetch(import.meta.env.VITE_API_URL+'/usuarios', {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"

@@ -1,3 +1,5 @@
+#credenciais
+.env
 # Logs
 logs
 *.log
